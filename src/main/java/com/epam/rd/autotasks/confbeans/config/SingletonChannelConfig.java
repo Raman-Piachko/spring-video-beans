@@ -6,9 +6,11 @@ import com.epam.rd.autotasks.confbeans.video.VideoStudio;
 import com.epam.rd.autotasks.confbeans.video.impl.VideoStudioBoilWaterImpl;
 import com.epam.rd.autotasks.confbeans.video.impl.VideoStudioBuildHouseImpl;
 import com.epam.rd.autotasks.confbeans.video.impl.VideoStudioEscapeSolitude;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
-
+@Configuration
 public class SingletonChannelConfig {
 
     private static final VideoStudio BOIL_WATER_STUDIO = new VideoStudioBoilWaterImpl();

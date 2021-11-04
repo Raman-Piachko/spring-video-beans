@@ -7,8 +7,9 @@ import com.epam.rd.autotasks.confbeans.video.impl.VideoStudioBoilWaterImpl;
 import com.epam.rd.autotasks.confbeans.video.impl.VideoStudioBuildHouseImpl;
 import com.epam.rd.autotasks.confbeans.video.impl.VideoStudioEscapeSolitude;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
-
+@Configuration
 public class PrototypeChannelConfig {
     private static final VideoStudio BOIL_WATER_STUDIO = new VideoStudioBoilWaterImpl();
     private static final VideoStudio BUILD_HOUSE_STUDIO = new VideoStudioBuildHouseImpl();
